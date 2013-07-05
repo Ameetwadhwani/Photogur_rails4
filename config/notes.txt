@@ -1,0 +1,10 @@
+Commands:
+
+1. rails new rails4app
+2. bundle install
+3. rails generate controller pictures
+4. rails generate migration CreatePhotos title:string artist:string url:string properties:hstore
+5. rake db:create
+6. rake db:migrate
+7. rake db:migrate RAILS_ENV=development
+8.

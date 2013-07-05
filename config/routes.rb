@@ -1,6 +1,6 @@
 Rails4app::Application.routes.draw do
 
-	get 'pictures' => 'pictures#index'
+	get 'photos' => 'photos#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
