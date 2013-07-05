@@ -15,3 +15,6 @@ Commands:
 
  <%= @photos[1][:url] %> ==> http://.....
  <%= @photos[params[:id].to_i][:url] %> ==> https:// ....
+
+ @photo[:url]  === >>>  this works too b/c we added @photo = @photos[params[:id]] to the photos_controller under def/show
+

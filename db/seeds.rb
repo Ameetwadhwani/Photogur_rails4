@@ -7,7 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-		photos = Photo.create([{title: "The church", artist: "Sergey", url: "http://monicao.s3.amazonaws.com/bitmaker/house.jpg"},
-		                       {title: "Sea Power", artist: "Stephen", url: "http://monicao.s3.amazonaws.com/bitmaker/wave.jpg"},
-		                      {title: "Poppies", artist: "John", url: "http://monicao.s3.amazonaws.com/bitmaker/girl.jpg"}])
+		photos = Photo.create(
+				[{title: "The church", artist: "Sergey", url: "http://monicao.s3.amazonaws.com/bitmaker/house.jpg", properties: {:key=>"value"}},
+				{title: "Sea Power", artist: "Stephen", url: "http://monicao.s3.amazonaws.com/bitmaker/wave.jpg", properties: {:key=>"value"}},
+		    {title: "Poppies", artist: "John", url: "http://monicao.s3.amazonaws.com/bitmaker/girl.jpg", properties: {:key=>"value"}}]
+		)
 

@@ -1,8 +1,6 @@
- <!-- returns the ID number -->
-<%= params[:id].to_i %>
+<p><%= @photo[:title] %>, <%= @photo[:artist] %>, <%= @photo[:properties] %> </p>
+<img src=" <%= @photo[:url] %>" >
 
-
-<img src=" <%= @photos[params[:id].to_i][:url] %>" >
 
 
 
