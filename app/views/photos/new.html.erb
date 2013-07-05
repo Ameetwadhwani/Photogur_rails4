@@ -1,0 +1,78 @@
+<h2>Add a Photo</h2>
+
+
+<%= form_for @photo do |f| %>
+    <p>
+      <%= label_tag 'Artist' %>
+      <%= f.text_field :artist  %>
+
+    </p>
+    <p>
+      <%= label_tag 'Title' %>
+      <%= f.text_field :title  %>
+    </p>
+    <p>
+      <%= label_tag 'URL' %>
+      <%= f.text_field :url  %>
+    </p>
+    <p> <%= submit_tag 'Save' %> </p>
+
+<% end %>
+
+
+
+
+<!--####### form tags is still less dynamic ##########-->
+<!-- <%#= form_tag '/photos' do %>-->
+    <!--<p>-->
+      <!--<%#= label_tag 'Artist' %>-->
+      <!--<%#= text_field_tag 'artist', nil,  :name => 'photo[artist]', :placeholder => 'artist' %>-->
+
+    <!--</p>-->
+    <!--<p>-->
+      <!--<%#= label_tag 'Title' %>-->
+      <!--<%#= text_field_tag 'title',nil,  :name => 'photo[title]'  %>-->
+    <!--</p>-->
+    <!--<p>-->
+      <!--<%#= label_tag 'URL' %>-->
+      <!--<%#= text_field_tag 'url', nil,  :name => 'photo[url]'  %>-->
+    <!--</p>-->
+    <!--<p>-->
+      <!--<%#= label_tag 'Properties'  %>-->
+      <!--<%#= text_field_tag 'properties', nil, :name => 'photo[properties]'  %>-->
+    <!--</p>-->
+    <!--<p> <%#= submit_tag 'Save' %> </p>-->
+
+<!--<%# end %>-->
+
+
+
+
+
+
+
+
+    <!-- This is the manual way - above is the ruby way
+    <h1> Add a Photo </h1>-->
+<!--<form action="/photos" method="POST">-->
+
+
+    <!--<p>-->
+      <!--<input type="text" name="artist" placeholder="artist name" />-->
+    <!--</p>-->
+    <!--<p>-->
+        <!--<input type ="text" name="title" placeholder ="title"/>-->
+    <!--</p>-->
+    <!--<p>-->
+        <!--<input type = "text" name="url" placeholder="http://"/>-->
+    <!--</p>-->
+    <!--<p>-->
+       <!--<input type = "hstore" name="properties" placeholder="hstore"/>-->
+    <!--</p>-->
+    <!--<p>-->
+      <!--<input type ="submit"/>-->
+    <!--</p>-->
+
+<!--</form>-->
+
+
