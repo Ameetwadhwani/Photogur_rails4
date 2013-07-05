@@ -8,6 +8,8 @@ gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'twitter-bootstrap-rails'
+
 
 #Use pry for magic
 gem 'pry'

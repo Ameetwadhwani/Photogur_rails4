@@ -6,6 +6,7 @@ Rails4app::Application.routes.draw do
 	get 'photos/new'    => 'photos#show'
 
 
+
 	#get 'photos/:id' => 'photos#show', as: 'photo'
 
 

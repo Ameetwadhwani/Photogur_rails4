@@ -7,8 +7,9 @@ class PhotosController < ApplicationController
 	end
 
 	def show
-		@photos = Photo.all
-		@photo = @photos[params[:id].to_i]        # variable names are correct according to the tutorial
+		@photo = Photo.find(params[:id])
+		#@photos = Photo.all
+		#@photo = @photos[params[:id].to_i]        # variable names are correct according to the tutorial
 	end
 
 	        ## rails 4 way of handling attr_accessible
@@ -35,10 +36,10 @@ class PhotosController < ApplicationController
 
 		respond_to do |format|
 			if @photo.save
-				format.html { redirect_to photos_url, notice: 'Photo was successfully created.' }
+				format.html { redirect_to photos_path , notice: 'Photo was successfully created.' }
 				format.json { render action: 'show', status: :created, location: @photo }
 			else
-				format.html { render action: 'new' }
+				format.html { render action: 'new', flash[:alert] => 'Missing fields'}
 				format.json { render json: @photo.errors, status: :unprocessable_entity }
 			end
 		end

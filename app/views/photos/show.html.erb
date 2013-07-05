@@ -1,9 +1,7 @@
-<p><%= @photo[:title] %>, <%= @photo[:artist] %>, <%= @photo[:properties] %> </p>
-<img src=" <%= @photo[:url] %>" >
+<%= link_to "Back to Photos", photos_url %>
 
-
-
-
+<p><%= @photo.title %>, <%= @photo.artist %></p>
+<%= image_tag @photo.url %>
 
 
 
