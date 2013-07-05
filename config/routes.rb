@@ -1,6 +1,7 @@
 Rails4app::Application.routes.draw do
 
 	get 'photos' => 'photos#index'
+	get 'photos/:id' => 'photos#show', as: 'photo'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

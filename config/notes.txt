@@ -8,3 +8,10 @@ Commands:
 6. rake db:migrate
 7. rake db:migrate RAILS_ENV=development
 8.
+
+
+
+  <img src = "<%= @picture[params[:id]%>"> == >   /Users/admin/Dropbox/Bitmaker/Assignments/rails4app/app/views/photos/show.html.erb:3: syntax error, unexpected ')', expecting ']'
+
+ <%= @photos[1][:url] %> ==> http://.....
+ <%= @photos[params[:id].to_i][:url] %> ==> https:// ....
