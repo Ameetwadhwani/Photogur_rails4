@@ -7,9 +7,11 @@ gem 'rails', '4.0.0.rc1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
-gem 'twitter-bootstrap-rails'
 
+
+	gem 'twitter-bootstrap-rails'
+	gem 'therubyracer'
+	gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 #Use pry for magic
 gem 'pry'
