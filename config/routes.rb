@@ -2,9 +2,11 @@ Rails4app::Application.routes.draw do
  	resources :photos
 
   root :to => 'photos#index'
-	get 'photos'        => 'photos#index'
-	post 'photos'       => 'photos#create'
-	get 'photos/new'    => 'photos#show'
+	#get 'photos'        => 'photos#index'
+	#post 'photos'       => 'photos#create'
+	#get 'photos/new'    => 'photos#show'
+
+  #get 'photos/:id/edit' => 'photos#edit', as: 'edit_photo'  -- not required since using resources: photos
 
 
 
